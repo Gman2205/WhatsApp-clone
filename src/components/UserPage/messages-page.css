@@ -1,0 +1,130 @@
+
+html, body{
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.userPage-header{
+  position: fixed;
+  display: block;
+  z-index:1;
+  width: 100%;
+  top: 0;
+
+}
+/* Messages Section */
+.zmdi-mail-send{
+  font-size: 25px;
+  margin-left: 5px;
+  color:white;
+}
+
+.btnSubmit{
+  background: none;
+  border: none;
+}
+
+.btnSubmit:focus{
+  outline: none;
+}
+
+.msgInput{
+  height: 35px;
+  margin-left: 4px;
+  width:80%;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 7px;
+  border-radius: 20px;
+  font-size: 18px;
+  padding-left: 7px;
+}
+
+.msgInput:focus{
+  outline: none;
+}
+
+.msgPanel{
+ background:url(https://cdnw.nickpic.host/mIZ6CX.jpg);
+ height: 100vh;
+}
+
+
+.msgBox{
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+.msgBox:first-child{
+  padding-top:75px;
+}
+
+
+
+/* User Messagebox */
+.user{
+  padding: 0.5em 4em 0.5em 0.5em;
+	border-radius: 0.46875em;
+  box-shadow: 0 1px 0.5px;
+  padding: 1em 9%;
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  height: 7px;
+  margin-right: 15px; 
+}
+
+
+ /* Contact Messagebox */
+.cont{
+  padding: 0.5em 4em 0.5em 0.5em;
+	border-radius: 0.46875em;
+  box-shadow: 0 1px 0.5px;
+  padding: 1em 9%;
+  background-color: #fff;
+  display: block;
+  align-self: flex-start;
+  height: 7px;
+  margin-left: 15px; 
+}
+
+.btnCircle{
+  position: fixed;
+  bottom: 0;
+  display: inline-block;
+  background: #075e54;
+  padding:7px;
+  border-radius: 50%;
+  margin-top: 20px;
+  right:0;
+  margin-right: 3px;
+  margin-bottom: 7px;
+}
+
+/* On big screen */
+@media(min-width:600px){
+  .msgInput{
+    width:90%;
+  }
+}
+
+@media(min-width: 1700px){
+  .msgInput{
+    width:95%;
+  }
+}
+
+@media(min-width:730px){
+  .msgPanel{
+    height: 92vh;
+  }
+}
+
+@media(min-height:800px){
+  .msgPanel{
+    height: 100vh;
+  }
+}
